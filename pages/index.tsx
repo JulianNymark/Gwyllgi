@@ -26,6 +26,7 @@ export default () => {
 
   return (
     <>
+      <h2>AES 256</h2>
       <label>secret</label>
       <input value={secret} onChange={e => setSecret(e.target.value)} />
 
