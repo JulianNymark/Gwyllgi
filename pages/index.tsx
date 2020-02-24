@@ -30,7 +30,7 @@ export default () => {
       <input value={secret} onChange={e => setSecret(e.target.value)} />
 
       <label>message</label>
-      <input value={message} onChange={e => setMessage(e.target.value)} />
+      <textarea value={message} onChange={e => setMessage(e.target.value)} />
 
       <br />
 
@@ -42,7 +42,7 @@ export default () => {
       >
         encrypt
       </button>
-      <input className="inline-block" value={enc} />
+      <textarea className="inline-block" value={enc} />
 
       <label>decrypted</label>
       <button
@@ -52,7 +52,7 @@ export default () => {
       >
         decrypt
       </button>
-      <input className="inline-block" value={dec} />
+      <textarea className="inline-block" value={dec} />
 
       <style jsx>{`
         * {
@@ -67,6 +67,10 @@ export default () => {
         }
         br {
           margin-top: 5vmin;
+        }
+        textarea {
+          height: 20vh;
+          width: 20vw;
         }
       `}</style>
     </>
